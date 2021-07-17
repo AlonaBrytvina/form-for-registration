@@ -1,5 +1,4 @@
 const form = document.querySelector('.formWithValidation');
-const validateBtn = form.querySelector('.validateBtn')
 
 // const fieldset = document.querySelector('fieldset');
 // const h1 = document.querySelector('h1');
