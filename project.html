@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Обучающий проект</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href='project.css' rel='stylesheet'>
+</head>
+
+<body>
+    <form class='formWithValidation'></form>
+    <fieldset>
+        <h1>Регистрация</h1>
+        <div class='nameField '>
+            <label for='name'>Имя</label>
+            <input type='name' placeholder='Введите ваше имя' class='name' maxlength="255" required>
+            <div class="nameErrorLabel errorLabel"></div>
+        </div>
+
+        <div class='surnameField'>
+            <label for='surname'>Фамилия</label>
+            <input type='surname' placeholder='Введите вашу фамилию' class='surname' maxlength="255" required>
+            <div class="surnameErrorLabel errorLabel"></div>
+        </div>
+
+        <div class='emailField'>
+            <label for='email'>Эл.почта</label>
+            <input type='email' placeholder="me@example.com" class='email' required>
+            <div class="emailErrorLabel errorLabel"></div>
+        </div>
+
+        <div class='birthDateField'>
+            <label for='birthDate'>Дата рождения</label>
+            <input type='date' placeholder='Введите дату вашего рождения' class='birthDate' required>
+            <div class="birthDateErrorLabel errorabel"></div>
+        </div>
+        <div class='passwordField'>
+            <label for="password">Пароль</label>
+            <input type="password" placeholder=" Ведите пароль" class="password" minlength="6" required />
+            <div class=" passwordErrorLabel errorLabel"></div>
+        </div>
+
+        <div class='passwordRepeatField'>
+            <label for="passwordRepeat">Подтверждение пароля</label>
+            <input type="password" placeholder="Подтвердите пароль" class="passwordRepeat" minlength="6" required>
+            <div class=" passwordRepeatErrorLabel errorLabel"></div>
+        </div>
+
+        <button type="submit" class='validateBtn' value='validate'>Отправить</button>
+    </fieldset>
+
+    <script src='project.js'></script>
+</body>
+
+</html>
